@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29731937ba3fa6049889b316adda3a86, type: 3}
+  m_Name: GD-20
+  m_EditorClassIdentifier: 
+  id: GD-20
+  displayName: 'Detroit: Become Android'
+  basePriceCents: 3999
+  discount: 0.7
+  coverArt: {fileID: 21300000, guid: 2ec1e53a0a73c2446b9777cb18be5667, type: 3}
+  series: 
+  seriesCount: 0
+  type: RPG
+  quality: 5
