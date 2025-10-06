@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29731937ba3fa6049889b316adda3a86, type: 3}
+  m_Name: GD-02
+  m_EditorClassIdentifier: 
+  id: GD-02
+  displayName: 'Dark Legend: Monkey King'
+  basePriceCents: 5999
+  discount: 1
+  coverArt: {fileID: 21300000, guid: 15e0c9b1c13f0234e9796498feeca784, type: 3}
+  series: 
+  seriesCount: 0
+  type: Action
+  quality: 5

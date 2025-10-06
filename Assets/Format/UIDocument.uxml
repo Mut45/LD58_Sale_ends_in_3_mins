@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<engine:UXML
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:engine="UnityEngine.UIElements"
+    xmlns:editor="UnityEditor.UIElements"
+    xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+>
+    
+    <!-- Steam风格的游戏商店页面示例 -->
+    <VisualElement class="steam-bg-store" style="flex-grow: 1;">
+        
+        <!-- 顶部导航栏 -->
+        <VisualElement class="steam-nav" style="height: 60px; flex-direction: row; align-items: center; padding: 0 20px; background-color: var(--gpStoreDarkestGrey);">
+            
+            <!-- Logo区域 -->
+            <VisualElement style="width: 40px; height: 40px; background-color: var(--gpColor-Blue); border-radius: 3px;" />
+            <Label text="游戏商店" class="steam-text-primary" style="margin-left: 15px; font-size: 18px;" />
+            
+            <!-- 导航按钮 -->
+            <Button text="商店" class="steam-button" style="margin-left: 30px;" />
+            <Button text="库" class="steam-button" style="margin-left: 10px;" />
+            <Button text="社区" class="steam-button" style="margin-left: 10px;" />
+            
+            <!-- 中间空白区域 -->
+            <VisualElement style="flex-grow: 1;" />
+            
+            <!-- 搜索框 -->
+            <TextField placeholder="搜索游戏..." class="steam-input" style="width: 250px;" />
+            
+            <!-- 用户区域 -->
+            <VisualElement style="flex-direction: row; align-items: center; margin-left: 20px;">
+                <VisualElement style="width: 30px; height: 30px; background-color: var(--gpSystemGrey); border-radius: 15px;" />
+                <Label text="用户名" class="steam-text-secondary" style="margin-left: 8px;" />
+            </VisualElement>
+            
+        </VisualElement>
+        
+        <!-- 主要内容区域 -->
+        <VisualElement style="flex-grow: 1; padding: 20px;">
+            
+            <!-- 页面标题 -->
+            <Label text="热门游戏" class="steam-label" style="font-size: 24px; margin-bottom: 20px;" />
+            
+            <!-- 游戏卡片网格 -->
+            <VisualElement style="flex-direction: row; flex-wrap: wrap; gap: 15px;">
+                
+                <!-- 游戏卡片1 -->
+                <VisualElement class="steam-card" style="width: 280px;">
+                    
+                    <!-- 游戏图标区域 -->
+                    <VisualElement style="width: 100%; height: 160px; background-color: var(--gpSystemDarkGrey); border-radius: 3px 3px 0 0;" />
+                    
+                    <!-- 游戏信息 -->
+                    <VisualElement style="padding: 15px;">
+                        <Label text="史诗冒险游戏" class="steam-label" style="font-size: 16px; margin-bottom: 5px;" />
+                        <Label text="开发商: 游戏工作室" class="steam-text-secondary" style="margin-bottom: 3px;" />
+                        <Label text="类型: RPG, 冒险" class="steam-text-muted" style="margin-bottom: 10px;" />
+                        
+                        <!-- 价格和按钮 -->
+                        <VisualElement style="flex-direction: row; justify-content: space-between; align-items: center;">
+                            <VisualElement>
+                                <Label text="¥99" class="steam-text-primary" style="font-size: 18px;" />
+                                <Label text="-20%" class="steam-text-secondary" style="margin-left: 8px;" />
+                            </VisualElement>
+                            <Button text="购买" class="steam-button" style="width: 80px;" />
+                        </VisualElement>
+                    </VisualElement>
+                    
+                </VisualElement>
+                
+                <!-- 游戏卡片2 -->
+                <VisualElement class="steam-card" style="width: 280px;">
+                    
+                    <!-- 游戏图标区域 -->
+                    <VisualElement style="width: 100%; height: 160px; background-color: var(--gpSystemDarkGrey); border-radius: 3px 3px 0 0;" />
+                    
+                    <!-- 游戏信息 -->
+                    <VisualElement style="padding: 15px;">
+                        <Label text="策略战争游戏" class="steam-label" style="font-size: 16px; margin-bottom: 5px;" />
+                        <Label text="开发商: 策略工作室" class="steam-text-secondary" style="margin-bottom: 3px;" />
+                        <Label text="类型: 策略, 战争" class="steam-text-muted" style="margin-bottom: 10px;" />
+                        
+                        <!-- 价格和按钮 -->
+                        <VisualElement style="flex-direction: row; justify-content: space-between; align-items: center;">
+                            <VisualElement>
+                                <Label text="¥149" class="steam-text-primary" style="font-size: 18px;" />
+                                <Label text="新品" class="steam-text-secondary" style="margin-left: 8px;" />
+                            </VisualElement>
+                            <Button text="购买" class="steam-button steam-button-green" style="width: 80px;" />
+                        </VisualElement>
+                    </VisualElement>
+                    
+                </VisualElement>
+                
+                <!-- 游戏卡片3 -->
+                <VisualElement class="steam-card" style="width: 280px;">
+                    
+                    <!-- 游戏图标区域 -->
+                    <VisualElement style="width: 100%; height: 160px; background-color: var(--gpSystemDarkGrey); border-radius: 3px 3px 0 0;" />
+                    
+                    <!-- 游戏信息 -->
+                    <VisualElement style="padding: 15px;">
+                        <Label text="竞速赛车游戏" class="steam-label" style="font-size: 16px; margin-bottom: 5px;" />
+                        <Label text="开发商: 竞速工作室" class="steam-text-secondary" style="margin-bottom: 3px;" />
+                        <Label text="类型: 竞速, 体育" class="steam-text-muted" style="margin-bottom: 10px;" />
+                        
+                        <!-- 价格和按钮 -->
+                        <VisualElement style="flex-direction: row; justify-content: space-between; align-items: center;">
+                            <VisualElement>
+                                <Label text="¥79" class="steam-text-primary" style="font-size: 18px;" />
+                                <Label text="-50%" class="steam-text-secondary" style="margin-left: 8px;" />
+                            </VisualElement>
+                            <Button text="购买" class="steam-button" style="width: 80px;" />
+                        </VisualElement>
+                    </VisualElement>
+                    
+                </VisualElement>
+                
+            </VisualElement>
+            
+            <!-- 底部区域 -->
+            <VisualElement style="margin-top: 40px; padding: 20px; background-color: var(--gpStoreDarkerGrey); border-radius: 3px;">
+                <Label text="更多游戏即将推出..." class="steam-text-primary" style="font-size: 18px; text-align: center;" />
+                <ProgressBar value="0.6" class="steam-progress-bar" style="margin-top: 15px;" />
+            </VisualElement>
+            
+        </VisualElement>
+        
+    </VisualElement>
+    
+</engine:UXML>

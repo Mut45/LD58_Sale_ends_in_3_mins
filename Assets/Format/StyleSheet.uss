@@ -1,0 +1,275 @@
+/* Steam-style CSS Variables converted to Unity USS */
+:root {
+    --indent-level: 0;
+    --field-negative-horizontal-margin: 0px;
+    --field-row-children-spacing: 0px;
+    
+    /* Dark container backgrounds */
+    --dark-ctn-bg: rgba(0, 0, 0, 0.2);
+    --dark-ctn-bg-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+    
+    /* Light container backgrounds */
+    --light-ctn-bg: rgba(179, 218, 255, 0.04);
+    --light-ctn-bg-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, rgba(28, 50, 70, 0.5) 65%, rgba(40, 70, 98, 0.45) 95%, rgba(40, 70, 98, 0.65) 100%);
+    --light-ctn-bg-gradient-top-color: rgba(40, 70, 98, 0.65);
+    --light-ctn-bg-hover: rgba(179, 218, 255, 0.09);
+    --light-fg: rgba(255, 255, 255, 0.8);
+    --mid-ctn-bg: rgba(179, 218, 255, 0.12);
+    
+    /* Steam color palette */
+    --green: #A1CD44;
+    --bright-teal: #00e4e4;
+    --blue: #1a9fff;
+    --blue-gradient-bg-bold: radial-gradient(ellipse 161.29% 1235.17% at -3.10% 130.83%, rgb(37, 134, 183) 0%, rgb(28, 71, 140) 60%, rgb(14, 61, 97) 100%);
+    --blue-gradient-bg-muted: radial-gradient(ellipse 161.29% 1235.17% at -3.10% 130.83%, rgb(43, 82, 128) 0%, rgb(25, 51, 87) 60%, rgb(33, 63, 98) 100%);
+    --multi-color-bg-gradient-1: linear-gradient(315deg, rgba(49, 72, 113, 0.90) 5%, rgba(10, 94, 94, 0.90) 95%);
+    
+    /* Steam system colors */
+    --gpSystemLightestGrey: #DCDEDF;
+    --gpSystemLighterGrey: #B8BCBF;
+    --gpSystemLightGrey: #8B929A;
+    --gpSystemGrey: #67707B;
+    --gpSystemDarkGrey: #3D4450;
+    --gpSystemDarkerGrey: #23262E;
+    --gpSystemDarkestGrey: #0E141B;
+    
+    /* Steam store colors */
+    --gpStoreLightestGrey: #CCD8E3;
+    --gpStoreLighterGrey: #A7BACC;
+    --gpStoreLightGrey: #7C8EA3;
+    --gpStoreGrey: #4e697d;
+    --gpStoreDarkGrey: #2A475E;
+    --gpStoreDarkerGrey: #1B2838;
+    --gpStoreDarkestGrey: #000F18;
+    
+    /* Steam gradients */
+    --gpGradient-StoreBackground: linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
+    --gpGradient-LibraryBackground: radial-gradient(farthest-corner at 40px 40px, #3D4450 0%, #23262E 80%);
+    
+    /* Steam brand colors */
+    --gpColor-Blue: #1A9FFF;
+    --gpColor-BlueHi: #00BBFF;
+    --gpColor-Green: #5ba32b;
+    --gpColor-GreenHi: #59BF40;
+    --gpColor-Orange: #E35E1C;
+    --gpColor-Red: #D94126;
+    --gpColor-RedHi: #EE563B;
+    --gpColor-DustyBlue: #417a9b;
+    --gpColor-LightBlue: #B3DFFF;
+    --gpColor-Yellow: #FFC82C;
+    --gpColor-ChalkyBlue: #66C0F4;
+    
+    /* Background variants */
+    --gpBackground-LightSofter: rgba(105, 152, 187, 0.14);
+    --gpBackground-LightSoft: rgba(59, 90, 114, 0.5);
+    --gpBackground-LightMedium: rgba(103, 139, 166, 0.44);
+    --gpBackground-LightHard: rgba(147, 184, 212, 0.5);
+    --gpBackground-LightHarder: rgba(170, 204, 230, 0.65);
+    --gpBackground-DarkSofter: rgba(14, 20, 27, 0.2);
+    --gpBackground-DarkSoft: rgba(14, 20, 27, 0.4);
+    --gpBackground-DarkMedium: rgba(14, 20, 27, 0.6);
+    --gpBackground-DarkHard: rgba(14, 20, 27, 0.8);
+    --gpBackground-Neutral-LightSofter: rgba(235, 246, 255, 0.10);
+    --gpBackground-Neutral-LightSoft: rgba(235, 246, 255, 0.20);
+    --gpBackground-Neutral-LightHarder: rgba(235, 246, 255, 0.50);
+    
+    /* Layout variables */
+    --gpNavWidth: 240px;
+    --gpPaymentsNavWidth: 340px;
+    --gpSidePanelWidth: 340px;
+    
+    /* Gradient colors for custom themes */
+    --GradientColor1: #81399a;
+    --GradientColor2: #0094a2;
+}
+
+/* Base styling with Steam-inspired colors */
+VisualElement {
+    color: var(--light-fg);
+    -unity-font: resource("Font/YourFontAsset");
+    font-size: 14px;
+}
+
+/* Steam-style scrollbar (Unity USS compatible properties) */
+.scrollView {
+    background-color: transparent;
+}
+
+.scrollView > ScrollViewer > VerticalScroller > LowButton,
+.scrollView > ScrollViewer > VerticalScroller > HighButton {
+    background-color: #202020;
+    border-radius: 6px;
+}
+
+.scrollView > ScrollViewer > VerticalScroller > Slider > DragElement {
+    background-color: #434953;
+    border-radius: 10px;
+    border-width: 4px;
+    border-color: rgba(0, 0, 0, 0);
+    margin: 4px;
+    min-height: 32px;
+    min-width: 32px;
+}
+
+.scrollView > ScrollViewer > VerticalScroller > Slider > DragElement:hover {
+    background-color: #5a6169;
+}
+
+/* Steam-style selection */
+.unity-text-element--selection {
+    background-color: #54a5d4;
+    color: #fff;
+}
+
+/* Steam-style containers */
+.dark-container {
+    background-color: var(--dark-ctn-bg);
+}
+
+.light-container {
+    background-color: var(--light-ctn-bg);
+}
+
+.light-container:hover {
+    background-color: var(--light-ctn-bg-hover);
+}
+
+.mid-container {
+    background-color: var(--mid-ctn-bg);
+}
+
+/* Steam-style buttons */
+.steam-button {
+    background-color: var(--gpColor-Blue);
+    color: white;
+    border-radius: 3px;
+    padding: 8px 16px;
+    margin: 4px;
+}
+
+.steam-button:hover {
+    background-color: var(--gpColor-BlueHi);
+}
+
+.steam-button-green {
+    background-color: var(--gpColor-Green);
+}
+
+.steam-button-green:hover {
+    background-color: var(--gpColor-GreenHi);
+}
+
+.steam-button-red {
+    background-color: var(--gpColor-Red);
+}
+
+.steam-button-red:hover {
+    background-color: var(--gpColor-RedHi);
+}
+
+/* Steam-style panels */
+.steam-panel {
+    background-color: var(--gpStoreDarkGrey);
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.steam-panel-header {
+    background-color: var(--gpStoreDarkerGrey);
+    border-radius: 3px 3px 0px 0px;
+    padding: 8px 12px;
+    color: var(--light-fg);
+    font-weight: bold;
+}
+
+/* Steam-style navigation */
+.steam-nav {
+    background-color: var(--gpStoreDarkestGrey);
+    width: var(--gpNavWidth);
+    border-right-color: var(--gpStoreDarkerGrey);
+    border-right-width: 1px;
+}
+
+/* Steam-style text colors */
+.steam-text-primary {
+    color: var(--light-fg);
+}
+
+.steam-text-secondary {
+    color: var(--gpSystemLightGrey);
+}
+
+.steam-text-muted {
+    color: var(--gpSystemGrey);
+}
+
+/* Steam-style backgrounds */
+.steam-bg-store {
+    background-color: var(--gpStoreDarkGrey);
+}
+
+.steam-bg-library {
+    background-color: var(--gpSystemDarkGrey);
+}
+
+.steam-bg-gradient {
+    background-color: var(--gpBackground-LightSoft);
+}
+
+/* Steam-style card/panel with hover effects */
+.steam-card {
+    background-color: var(--gpStoreDarkGrey);
+    border-radius: 3px;
+    padding: 12px;
+    margin: 4px;
+    border-width: 1px;
+    border-color: var(--gpStoreDarkerGrey);
+}
+
+.steam-card:hover {
+    background-color: var(--gpBackground-LightSoft);
+    border-color: var(--gpColor-Blue);
+}
+
+/* Steam-style input fields */
+.steam-input {
+    background-color: var(--gpSystemDarkGrey);
+    border-color: var(--gpSystemGrey);
+    border-width: 1px;
+    border-radius: 3px;
+    color: var(--light-fg);
+    padding: 8px;
+}
+
+.steam-input:focus {
+    border-color: var(--gpColor-Blue);
+    background-color: var(--gpSystemDarkerGrey);
+}
+
+/* Steam-style labels */
+.steam-label {
+    color: var(--light-fg);
+    font-size: 14px;
+}
+
+.steam-label-secondary {
+    color: var(--gpSystemLightGrey);
+    font-size: 12px;
+}
+
+/* Steam-style progress bars */
+.steam-progress-bar {
+    background-color: var(--gpSystemDarkGrey);
+    border-radius: 2px;
+    height: 8px;
+}
+
+.steam-progress-bar > ProgressBar > Background {
+    background-color: var(--gpSystemDarkGrey);
+    border-radius: 2px;
+}
+
+.steam-progress-bar > ProgressBar > Background > ProgressBar > Background {
+    background-color: var(--gpColor-Blue);
+    border-radius: 2px;
+}
